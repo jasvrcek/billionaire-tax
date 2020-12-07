@@ -35,9 +35,10 @@
                 border: 1px solid #000;
                 background: #fff;
                 margin: .5em 1em;
+                font-weight: 400;
             }
             .large {
-                font-size: 2em;
+                font-size: 1.8em;
             }
             .row {
                 margin: 1.5em auto;
@@ -83,11 +84,15 @@
             }
 
             /* text styles */
+            a {
+                color: #ff3333;
+            }
             b {
                 font-weight: 900;
             }
             .outline {
-                font-family: 'Londrina Outline', sans-serif;
+                color: #ffcc00;
+                font-size: 1.1em;
             }
             .red {
                 color: #ff3333;
@@ -100,6 +105,9 @@
             }
             .border-yellow {
                 border: 1em solid #ffcc00;
+            }
+            .border-white {
+                border: 1em solid #fff;
             }
 
             #banner {
@@ -277,25 +285,31 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="item large">
-                    If the <b>total area</b> of this roll represents
-                    <br/>the <b>cumulative wealth of billionaires</b>
-                    <br/> Then the <b>white square</b> above = <b>$1 billion</b>
-                    <br/>and the small <b>red square</b> = <b>$25,000</b>
+            <div class="row" style="margin:12em auto">
+                <div class="column">
+                    <div class="item large">
+                        If the <b>total area</b> of this roll represents
+                        <br/>the <b>cumulative wealth of billionaires</b>
+                        <br/> Then the <b>white box</b> = <b>$1 billion</b>
+                        <br/>and the small <b>red square</b> = <b>$25,000</b>
+                    </div>
+                    <h1 style="color: #fff;" class="large">&darr;</h1>
+                    <div data-wealth-in-thousands="1000000" class="wealth-block" style="background: #fff;">
+                        <div data-wealth-in-thousands="25" class="wealth-block bg-red"></div>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="item large">
+                <div class="item large" style="border-left:1em solid #ffcc00">
                     <b>Since the start of the pandemic the 
-                    <br/>ultra-wealthy have gained wealth</b>
+                    <br/>ultra-wealthy have gotten a lot richer</b>
                 </div>
             </div>
 
             <div class="row">
                 <div class="item large">
-                    During the same pandemic period
+                    <b>During the same pandemic period</b>
                     <br/>2,594,000 New Yorker residents lost
                     <br/>jobs, 387,000 fell ill with the virus
                     <br/>and 31,000 died from it
@@ -303,23 +317,23 @@
             </div>
 
             <div class="row">
-                <div class="item large">
+                <div class="item large" style="border-left:1em solid #ff3333">
                     <h4><b>387,000 
-                    <br/>New Yorkers fell ill</b></h4>
+                    <br/>New Yorkers <span class="red">fell ill</span></b></h4>
                 </div>
             </div>
 
             <div class="row">
                 <div class="item large">
                     <h4><b>31,000 
-                    <br/>New Yorkers died of the virus</b></h4>
+                    <br/>New Yorkers <span class="red">died of the virus</span></b></h4>
                 </div>
             </div>
 
             <div class="row">
                 <div class="item large">
                     <h4><b>2,594,000 
-                    <br/>New Yorkers lost jobs</b></h4>
+                    <br/>New Yorkers <span class="red">lost jobs</span></b></h4>
                 </div>
             </div>
 
@@ -342,14 +356,7 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="item">
-                    Between this line and the start of this
-                    <br/>roll of material represents . . .
-                </div>
-            </div>
-
-            <div class="row">
+            <div class="row" style="margin:8em auto 14em">
                 <div class="item large">
                     <h4>
                         <b>"This crisis calls for <span class="red">multimillionaires
@@ -360,47 +367,48 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="item large">
-                    Between this line and the start of this 
-                    <br/>roll of material so far represents
-                    <h4>$100,000,000,000
-                    <br/><span class="outline">one-hundred billion</span></h4>
+            <div data-wealth-in-thousands="1500000" class="wealth-block border-white">
+                <div class="row">
+                    <div class="item large">
+                        This box is the
+                        <h4><b>Cost to provide free pre-k
+                        <br/>for all 3 & 4 year-olds in NY</b></h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="item large">
+                        <h3><span class="outline">$1,500,000,000</span></h3>
+                        $1.5 Billion
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div data-wealth-in-thousands="9000000" class="wealth-block border-white" style="margin-top:10em">
+                <div class="row">
+                    <div class="item large">
+                        <b><span class="large red"> Childcare for all</span>
+                            <br/><br/>
+                            <br/>9 billion dollars = Cost to provide
+                        <br/> free childcare for all New Yorkers</b>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="item large">
+                        <h3><span class="outline">$9,000,000,000</span></h3>
+                        $9 Billion
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 20em;">
+                <h2 style="color: #fff;">Individual Examples of Wealth</h2>
+            </div>
+
+            <div class="row" style="margin-top: 2em;">
                 <div class="item">
-                    <h4><b>Cost to provide free pre-k
-                    <br/>for all 3 & 4 year-olds in NY</b></h4>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="item">
-                    <h3><span class="outline">$1,500,000,000</span></h3>
-                    $1.5 Billion
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="item large">
-                    <b>Childcare for all</b>
-                    <br/>9 billion dollars = Cost to provide
-                    <br/> free childcare for all New Yorkers
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="item">
-                    <h3><span class="outline">$9,000,000,000</span></h3>
-                    $9 Billion
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="item">
-                    $3.1 Billion - Richard LeFrak
+                    <b><span class="red">$3.1 Billion</span></b> - Richard LeFrak
                     <br/>CEO of the Lefrak organization.  Wealthiest
                     <br/>of the strictly real estate billionaires
                 </div>
@@ -408,7 +416,7 @@
 
             <div class="row">
                 <div class="item large">
-                    <b>$2.1 Billion</b> (each)
+                    <b><span class="red">$2.1 Billion</span></b> (each)
                     <br/><b>Alain & Gerard Wertheimer</b> 
                     <br/> Owners of fashion boutique Chanel
                     <br/>Own multiple private islands
@@ -417,40 +425,43 @@
 
             <div class="row">
                 <div class="item">
-                    $3.6 Billion - Marc Rowen
+                    <b><span class="red">$3.6 Billion</span></b> - Marc Rowen
                     <br/>Apollo Global Management
                 </div>
             </div>
 
             <div class="row">
                 <div class="item">
-                    $4.5 Billion - Joshua Harris
+                   <b><span class="red">$4.5 Billion</span></b> - Joshua Harris
                     <br/>Apollo Global Management
                 </div>
             </div>
 
             <div class="row">
                 <div class="item large">
-                    <b>$7.6 Billion - Leon Black</b>
+                    <b><span class="yellow">$7.6 Billion</span> - Leon Black</b>
                     <br/>Apollo Global Management Wealth 
-                    <br/> Wealth increased $1B since pandemic.
-                    <br/>Owns $50M Manhattan Mansion, $40M
-                    <br/> LA Mansion. Paid $16M for one painting
+                    <br/><br/> Wealth increased $1B since pandemic.
+                    <br/><br/>$50M Manhattan Mansion
+                    <br/>$40M LA Mansion
+                    <br/>Paid $16M for one painting
                 </div>
             </div>
 
+            <div class="row" style="margin-top: 20em;">
+                <div class="item large">
+                    <b>Cost to provide all new 
+                    <br/>yorkers free healthcare</b>
+                </div>
+            </div>
             <div class="row">
                 <div class="item large">
-                    <h4>
-                        <b>Cost to provide all new 
-                        <br/>yorkers free healthcare</b>
-                    <br/><span class="outline">$160,000,000,000</span>
-                    </h4>
-                    160 billion dollars
+                    <h1><b><span class="outline large">$160,000,000,000</span>
+                    <br/>160 billion dollars</b></h1>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" style="margin-top: 20em;">
                 <div class="item">
                     $48 Billion -> cost to cover every 
                     <br/>prescription and all medical devices for 
@@ -1117,10 +1128,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="item">
+                <div class="item large">
                     The total area of this material represents the cumulative wealth 
-                    <br/>of New York billionaires.  There are 14 ways to tax the rich, learn more at 
-                    <br/>www.makebillionairespay.info
+                    <br/>of New York billionaires.  
+                    <br/><br/>
+                    <h2>There are <span class="red">14 ways</span> to tax the rich.</h2>
+                    <br/><br/>
+                    Learn more at 
+                    <br/>
+                    <b><a href="https://makebillionairespay.info/">makebillionairespay.info</a></b>
                 </div>
             </div>
         </div>
@@ -1128,37 +1144,45 @@
         <script>
             (function(){
 
-                let scale = .1;
+                let scale = .5;
 
                 if (document.body.clientWidth < 980) {
-                    scale = .05;
+                    scale = .25;
                 } else if (document.body.clientWidth < 680) {
-                    scale = .035;
-                }
-
-                //resize all elements with data-wealth-in-thousands attribute
-                for (const wealthElement of document.querySelectorAll('[data-wealth-in-thousands]')) {
-                    console.log(wealthElement);
-                    let w = wealthElement.dataset.wealthInThousands * scale;
-                    let width = Math.sqrt(w);
-                    wealthElement.style.width = width + "px";
-                    wealthElement.style.height = width + "px";
+                    scale = .1;
                 }
 
                 let theBanner = document.getElementById('banner');
 
                 //set banner height
                 let bannerWidth = theBanner.clientWidth;
-                let bannerHeight = (600000000000 * scale / bannerWidth * scale);
+                let bannerAreaWealthInThousands = 600000000 * scale;
+                let bannerHeight = bannerAreaWealthInThousands / bannerWidth;
                 theBanner.style.height = bannerHeight + "px";
 
                 //add billion dollar ticks
-                for (let i = 1; i < 6001; i++) {
+                for (let i = 1; i < 601; i++) {
                     let el = document.createElement('div');
                     el.className = 'tick';
-                    el.textContent = '$' + (i / 10) + ' billion';
-                    el.style.top = (bannerHeight / 6000 * i) + "px";
+                    el.textContent = '$' + i + ' billion';
+                    el.style.top = (bannerHeight / 600 * i) + "px";
                     theBanner.appendChild(el);
+                }
+
+                //resize all elements with data-wealth-in-thousands attribute
+                for (const wealthElement of document.querySelectorAll('[data-wealth-in-thousands]')) {
+                    console.log(wealthElement);
+                    let wealthArea = wealthElement.dataset.wealthInThousands * scale;
+                    let width = Math.sqrt(wealthArea);
+                    let height = width;
+
+                    if (width > bannerWidth) {
+                        width = bannerWidth * .9;
+                        height = wealthArea / width;
+                    }
+
+                    wealthElement.style.width = width + "px";
+                    wealthElement.style.height = height + "px";
                 }
             })();
         </script>
