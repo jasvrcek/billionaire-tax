@@ -1,52 +1,85 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>The Wealth of New York Billionaires</title>
+        <meta name="description" content="An illustration of how much wealth billionaires control" />
+        <meta property="og:url" content="http://billionairewealth.info"/>
+	    <meta property="og:title" content="The Wealth of New York Billionaires"/>
+        <meta property="og:type" content="website" />
+	    <meta property="og:description" content="An illustration of how much wealth billionaires control"/>
+	    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/5db70b910da41464ebcbe488/1594420779207-VM01TOQXBOOUHRJ6SE0Y/ke17ZwdGBToddI8pDm48kAwJCV7DnM1J8KZnvMFNuj8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dnF8HEq6GhK2HaUG_5epuER-rybdpw6oPLk9obg3r1ibCjLISwBs8eEdxAxTptZAUg/ClangClang-CollageSharable-v17.png?format=2500w"/>
+	    <meta name="twitter:card" content="summary"/>
+	    <meta name="twitter:title" content="The Wealth of New York Billionaires"/>
+	    <meta property="twitter:description" content="An illustration of how much wealth billionaires control"/>
+        <meta name="twitter:image" content="https://images.squarespace-cdn.com/content/v1/5db70b910da41464ebcbe488/1594420779207-VM01TOQXBOOUHRJ6SE0Y/ke17ZwdGBToddI8pDm48kAwJCV7DnM1J8KZnvMFNuj8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dnF8HEq6GhK2HaUG_5epuER-rybdpw6oPLk9obg3r1ibCjLISwBs8eEdxAxTptZAUg/ClangClang-CollageSharable-v17.png?format=2500w"/>
+        
         <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <style>
-            html,body {
-                background: #515151;
+            body {
+                background: #666666;
                 text-align: center;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 100;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 1.1;
+                margin:1px 0;
+                padding: 1px;
             }
             .item {
                 display: inline-block;
-                padding: 10px 20px;
+                padding: .5em 1em;
                 border: 1px solid #000;
                 background: #fff;
+                margin: .5em 1em;
             }
             .large {
                 font-size: 2em;
             }
             .row {
-                margin: 30px auto;
+                margin: 1.5em auto;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
+                flex-wrap: wrap;
             }
             .column {
-                margin: 0 5px;
+                margin: 0 .25em;
                 flex-grow: 1;
             }
+
+
+
             .lower {
                 text-transform: lowercase;
             }
             h1, h2, h3, h4 {
                 line-height: 1.2;
-                margin: 15px auto;
-                font-weight: 300;
+                margin: .25em auto;
+                font-weight: 700;
             }
             h1 {
-                font-size:4em
+                font-size:2em
             }
             h2 {
-                font-size:3.5em
+                font-size:1.5em
             }
             h3 {
-                font-size: 3em;
+                font-size: 1em;
             }
             h4 {
-                font-size: 2.5em;
+                font-size: .75em;
+            }
+
+            #giant-heading {
+                font-size: 15em;
+                font-weight: 900; 
+                color:#fff;
+                line-height: .5;
+                margin:-.75em auto .5em;
             }
 
             /* text styles */
@@ -57,971 +90,1076 @@
                 font-family: 'Londrina Outline', sans-serif;
             }
             .red {
-                color: rgb(255,0,0);
+                color: #ff3333;
             }
             .bg-red {
-                background-color: rgb(255,0,0);
+                background-color: #ff3333;
+            }
+            .yellow {
+                color: #ffcc00;
+            }
+            .border-yellow {
+                border: 1em solid #ffcc00;
+            }
+
+            #banner {
+                width: 1250px;
+                margin: 10em auto;
+                padding-top: 1px;
+                background: #000033;
+                position: relative;
+            }
+            .tick {
+                color: #000;
+                background: #ffcc00;
+                font-weight: 500;
+                font-size: 11px;
+                padding: 4px 8px;
+                right: -40px;
+                position: absolute;
+                box-shadow: -3px 3px 10px rgba(0,0,0,.5);
+                opacity: .8;
+            }
+            .wealth-block {
+                display: inline-block;
+            }
+
+
+            @media (max-width: 1300px) {
+                #banner {
+                    width: 900px;
+                }
+                body {
+                    font-size: 12px;
+                }
+            }
+            @media (max-width: 980px) {
+                #banner {
+                    width: 600px;
+                }
+                .large {
+                    font-size: 1.75em;
+                }
+            }
+            @media (max-width: 680px) {
+                #banner {
+                    width: 325px;
+                }
+                .large {
+                    font-size: 1.5em;
+                }
+                #giant-heading {
+                    font-size: 8em;
+                    margin-top: -1.5em;
+                    margin-bottom: 1.5em;
+                }
+                .tick {
+                    font-size: 9px;
+                    right: -30px;
+                }
+            }
+            @media (max-width: 340px) {
+                #banner {
+                    width: 300px;
+                }
             }
         </style>
     </head>
     <body>
 
-        <div class="row">
-            <div class="item large">
-                <b>The total area of this material 
-                <br/>represents the cumulative wealth 
-                <br/>of New York billionaires.</b>
-            </div>
-        </div>
+        <div id="banner">
 
-        <div class="row">
-            <div class="item">
-                People in the United States = 331,002,651
-                <br/>[Over 331 million people in the United States]
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                New York 
-                <b>has more ultra-millionaires &
-                <br/>billionaires than ever before</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>Individuals worth more than $30 million</b>
-                <br/>are classified as ultra high net worth
-                <br/> aka part of the <b> ultra wealth class</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>There are <h2>8,865 ultramillionaires</h2>
-                <br/> out of 8.4 million new yorkers</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>There are 
-                <h2>120 billionaires</h2>
-                <br/> out of 8.4 million new yorkers</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>Billions of $$$ is hard to imagine- </b>
-                <br/>for visual comparison here are some to-scale
-                <br/> numbers worth being familiar with . . .
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                Average Annual
-                <br/>New Yorkers' Income
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <div data-wealth-in-thousands="74501" class="bg-red"></div>
-                <p class="red">Average income of the top .01%</p>
-                <div class="item">
-                    Average Income 
-                    <br/>of the top .01%
-                    <br/>$74,501,400
-                    <br/>$74.5 Million
+            <div class="border-yellow" style="border-bottom: none; margin-top:4em;padding-bottom: 20em;">
+                <div class="row">
+                    <div class="item">
+                        <b>The total area of this purple box 
+                        <br/>represents the cumulative wealth 
+                        <br/>of New York billionaires.</b>
+                    </div>
                 </div>
             </div>
-            <div class="column">
-                <div data-wealth-in-thousands="2201" class="bg-red"></div>
-                <p class="red">Average income of the top .1%</p>
+            <h1 id="giant-heading">600+ <br/><span style="font-size:.5em">BILLION</span></h1>
+
+            <div class="row">
                 <div class="item">
-                    Average 
-                    <br/>of the top .1%
-                    <br/>$2,202.480
-                    <br/>$2.2 Million
+                    There are more than
+                    <h2 class="red">19,450,000</h2>
+                    million people in New York State
                 </div>
             </div>
-            <div class="column">
-                <div data-wealth-in-thousands="50" class="bg-red"></div>
-                <p class="red">Average income of the bottom 99%</p>
-                <div class="item">
-                    $Average 
-                    <br/>bottom 99%
-                    <br/>$50,000
-                    <br/>$50 Thousand
-                </div>
-            </div>
-            <div class="column">
-                <div data-wealth-in-thousands="25" class="bg-red"></div>
-                <p class="red">25K or less</p>
-                <div class="item">
-                    $25K or less
-                    <br/>bottom 99%
-                    <br/>$25,000
-                    <br/>$25 thousand or less
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                If the <b>total area</b> of this roll represents
-                <br/>the <b>cumulative wealth of billionaires</b>
-                <br/> Then the <b>white square</b> above = <b>$1 billion</b>
-                <br/>and the small <b>red square</b> = <b>$25,000</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>Since the start of the pandemic the 
-                <br/>ultra-wealthy have gained wealth</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                During the same pandemic period
-                <br/>2,594,000 New Yorker residents lost
-                <br/>jobs, 387,000 fell ill with the virus
-                <br/>and 31,000 died from it
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b><h4>387,000 
-                <br/>New Yorkers fell ill</h4></b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b><h4>31,000 
-                <br/>New Yorkers died of the virus</h4></b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b><h4>2,594,000 
-                <br/>New Yorkers lost jobs</h4></b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                Billionaires in our state now have 
-                <br/><b>$600+ billion,</b> while the rest of New York
-                <br/> suffers under pandemic economic fallout
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>Cost to forgive all new
-                    <br/>york student loan debt</b>
-                    <br/><span class="outline">$82,000,000,000</span> 
-                </h4>
-                82 Billion dollars
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                Between this line and the start of this
-                <br/>roll of material represents . . .
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>"This crisis calls for <span class="red">multimillionaires
-                        <br/>and billionaires to help</span> our state</b>
-                    <br/><span class="outline">shoulder this extraordinary burden".</span>
-                </h4>
-                -Senate Majority Leader Andrea Stewart Cousins
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                Between this line and the start of this 
-                <br/>roll of material so far represents
-                <h4>$100,000,000,000
-                <br/><span class="outline">one-hundred billion</span></h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                <h4><b>Cost to provide free pre-k
-                <br/>for all 3 & 4 year-olds in NY</b></h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                <h3><span class="outline">$1,500,000,000</span></h3>
-                $1.5 Billion
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>Childcare for all</b>
-                <br/>9 billion dollars = Cost to provide
-                <br/> free childcare for all New Yorkers
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                <h3><span class="outline">$9,000,000,000</span></h3>
-                $9 Billion
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $3.1 Billion - Richard LeFrak
-                <br/>CEO of the Lefrak organization.  Wealthiest
-                <br/>of the strictly real estate billionaires
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>$2.1 Billion</b> (each)
-                <br/><b>Alain & Gerard Wertheimer</b> 
-                <br/> Owners of fashion boutique Chanel
-                <br/>Own multiple private islands
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $3.6 Billion - Marc Rowen
-                <br/>Apollo Global Management
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $4.5 Billion - Joshua Harris
-                <br/>Apollo Global Management
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>$7.6 Billion - Leon Black</b>
-                <br/>Apollo Global Management Wealth 
-                <br/> Wealth increased $1B since pandemic.
-                <br/>Owns $50M Manhattan Mansion, $40M
-                <br/> LA Mansion. Paid $16M for one painting
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>Cost to provide all new 
-                    <br/>yorkers free healthcare</b>
-                <br/><span class="outline">$160,000,000,000</span>
-                </h4>
-                160 billion dollars
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $48 Billion -> cost to cover every 
-                <br/>prescription and all medical devices for 
-                <br/>every New Yorker
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $38 Billion -> cost to provide long term 
-                <br/>care for every elderly and chronically-ill 
-                <br/>New Yorker
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $32 Billion -> cost to provide insulin for  
-                <br/>every person in the United States
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>Cost to lift everyone
-                    <br/>in the U.S. out of poverty</b>
-                    <br/><span class="outline">$175,300,000,000</span> 
-                </h4>
-                175.3 Billion dollars
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>Cost to lift everyone
-                    <br/>in the U.S. out of poverty</b>
-                    <br/><span class="outline">$175,300,000,000</span> 
-                </h4>
-                175.3 Billion dollars
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>$47,900,000,000</b>
-                </h4>
-                    $47.9 billion, Julia Koch
-                <h4>
-                    <b>Julia Koch & Family
-                    <br/> Major Right Wing Donor</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                Julia Koch's family conglomerate is
-                <br/>koch industries
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                Koch industries is the 2nd largest 
-                <br/>privately held company in the U.S. with
-                <br/>revenue of $115 billion a year
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                Wealth now $47.9 billion, wealth
-                <br/>increased 26% since the pandemic
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                Wealth now $47.9 billion, wealth
-                <br/>increased 26% since the pandemic
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4><span class="outline">$266,000,000</span>
-                </h4>
-                $266 Million
-                <h4>
-                    <b>Cost to have a nurse in every public school in NY</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              $3.7 billion 
-                <br/>Barry Diller-founded Fox Broadcasting.
-                <br/>Chairman of Expedia.  Wealth increase since
-                <br/>pandemic: $700 million
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                    <b>$12.6 Billion - Donald Newhouse</b>
-                    <br/>Publishing/cable - Has a position on 
-                    <br/>the Library of Congress as both a board
-                    <br/>and council member
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              $3.6 billion - Thomas Secunda
-                <br/>Bloomberg LP
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              $6.9 billion - Valerie Mars
-                <br/>Mars, Inc.
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              $3.1 billion - Richard LeFrak
-                <br/>The wealthiest of the strictly real estate
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              $82 billion -> Cost to forgive all New York
-                <br/>student loan debt
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4><span class="outline">$8,000,000,000</span></h4>
-                8 billion dollars
-            </div>
-        </div>
 
             <div class="row">
                 <div class="item large">
-              <h4>
-                  <b>Make CUNY college free</b>
-                </h4>
-                <b>8 billion dollars</b> = cost to
-                <br/>make college free for all CUNY students 
-                <br/>for the next 10 years 
+                    New York 
+                    <b>has more ultra-millionaires &
+                    <br/>billionaires than ever before</b>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="item">
-              $25 billion -> Provides 35.7 million laptops
-                <br/>to our kids and whoever needs them
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>$60,100,000,000</b>
-                </h4>
-                    $60.1 billion, Michael Bloomberg
-                <h4>
-                    <b>Michael Bloomberg - Richest 
-                    <br/> Person in New York</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              Michael Bloomberg, former NYC mayor and
-                <br/>currently the richest person in NYC
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              As mayor, he implemented "stop and frisk"
-                <br/>a police practice that unconstitutionally
-                <br/>targets black and brown new yorkers
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              Wealth, now $60.1 billion, increased
-                <br/>25% ($15B) since the pandemic started
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>$30,000,000,000</b>
-                </h4>
-                    $30 billion
-                <h4>
-                    <b>Cost to hire 50,000  
-                    <br/> teachers for 10 years</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              If Michael Bloomberg paid for this with his
-                <br/>wealth alone, he would still be a 
-                <br/>multi-billionare billionaire afterwards 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              Michael Bloomberg, former NYC mayor and
-                <br/>currently the richest person in NYC
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                    <b>$17.8 Billion
-                        <br/>Donald Newhouse</b>
-                    <br/>CEO of Blackstone Group.  Fortune
-                    <br/>increased $2.4 billion since the 
-                    <br/>the pandemic started. <b>Top Trump Donor</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              $35 Billion -> Cost to build or preserve
-                <br/> 600,000 units of new democratically 
-                <br/>controlled housing
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$6,000,000,000</span>
-                </h4>
-                $6 billion dollars
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>End Homelessness</b>
-                </h4>    
-                    <br/>$6 Billion = Cost per year
-                    <br/>to end homelessness and stably house 
-                    <br/>every low income New Yorker
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              $40 Billion -> Cost to repair and update
-                <br/> NYCHA housing for 400,000 New Yorkers 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$5,700,000,000</span>
-                </h4>
-                $5.7 billion dollars each
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <b>Katherine Rayner, James
-                    <br/>Chambers, Margaretta
-                    <br/>Taylor - Cox Enterprises</b>
-                </h4>    
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-              Cox Enterprises is a member of "Reforming 
-              <br/>America's Taxes Equitably" - a group 
-                <br/> advocating for tax "reform" by lowering 
-                <br/>the corporate taxes even more 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                If the <b>total area</b> of this roll represents
-                <br/>the <b>cumulative wealth of billionaires</b>
-                <br/> Then the <b>white square</b> below = <b>$1 billion</b>
-                <br/>and the small <b>red square</b> = <b>$25,000</b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                NY faces a multi-billion dollar deficit due
-                <br/>to coronavirus - Cuomo's budget office
-                <br/>estimates it has grown to $14.5 billion
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h5>
-                    March 28, Governor Andrew Cuomo:
-                </h5>
-                <br/>"YEAH LOOK, WE HAVE NO MONEY.
-                <br/>SO LIFE IS OPTIONS.
-                <br/>THE STATE HAS NO MONEY."
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="red">NEW YORK STATE BUDGET
-                    <br/>DEFICIT </span>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              Governor Andrew Cuomo plans to make
-                <br/>New Yorkers in need shoulder the 
-                <br/>pandemic burden by cutting the the state's
-                <br/>budget 20% across the board . . .
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b> . . .Cutting 20% across the board will</b>
-                <br/>affect education, healthcare, housing, 
-                <br/>homelessness, and much more
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>GOV. CUOMO'S
-                    <br/>20% CUTS</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>LAYING OFF TEACHERS
-                    <br/>& PROFESSORS</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>HIGHER TOLLS</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>LAYING OFF
-                    <br/>GUIDANCE COUNSELORS &
-                    <br/> SOCIAL WORKERS</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>FIRING NURSES
-                    <br/>DURING A GLOBAL PANDEMIC</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>HIGHER COLLEGE TUITION</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>DIMINISHED GARBAGE
-                    <br/>PICK-UP</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-              <h4>
-                  <b>HIGHER PROPERTY TAXES
-                    <br/>FOR WORKING CLASS
-                    <br/>HOMEOWNERS</b>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">Almost</span>
-                    <b>two-thirds (65%) of voters prefer to </b> <span class="red">raise taxes</span>
-                        <span class="outline">compared with only 16% who prefer service cuts</span>
-                </h4>
-                This holds steady in both Long Island senate districts (65%) and the Hudson Valley senate districts (69%)
-                <br/>where there is even less support for service cuts (8% and 7%) respectively
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">"The</span>
-                    <span class="red">assembly majority</span>
-                    <b>has long favored asking those with more to pay their fair share".</b> 
-                </h4>
-                - Speaker of the New York State Assembly Carl Heastie
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $4.3 billion - Ken Langone Home Depot.
-                <br/> Contributed to Cuomo's campaigns for Governor 
-                <br/> and consequently served on his council of economic 
-                <br/> and fiscal adivsers group in 2010
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>3.8 Billion - Jeremy Jacobs Jr.</b>
-                <br/>Named to Cuomo's re-opening advisory board
-                <br/> <b>Owner of the Boston Bruins, reduced
-                <br/> salaries of team staff while his own 
-                <br/> wealth increased by $600 million </b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <b>3.7 Billion - Jonathan Gray</b>
-                <br/>Named to Cuomo's re-opening advisory board
-                <br/> <b>Donated to 3 Democratic
-                <br/> corporate-friendly presidential
-                <br/> candidates during the 2020 primaries </b>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">It's time to</span>
-                    <span class="red"><b>stop</b></span>
-                    <br/><b>protecting billionaires</b> 
-                    <br/><span class="outline">and start protecting working people</span>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">It's time to</span>
-                    <span class="red"><b>stop</b></span>
-                    <br/><b>Governor Cuomo's cuts</b> 
-                    <br/><span class="outline">to essential schools and hospitals</span>
-                </h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                Since the pandemic started
-                <br/><b>New York Billionaires' wealth</b>
-                <br/><b>increased by $77 billion</b>
-                <br/>(March to June 2020)
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <span class="red"><b>Billionaire $$$$ Gains 
-                <br/> greater than 3 times NY State Budget </b></span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                $77 billion = More than 3 times
-                <br/> the entire NYS budget
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item">
-                The state budget deficit is huge (14.5 billion)
-                <br/> but it is also manageable
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                Ultra-wealthy New Yorkers still
-                <br/>pay lower tax rates than
-                <br/>working class New Yorkers
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                Yet Cuomo has refused to consider
-                <br/>taxes on the ultra-rich that could
-                <br/>together raise over $45 billion a year 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h6>August 31, Governor Andrew Cuomo</h6>
-                <br/>"There is no combination of savings, 
-                <br/>efficiencies, tax increases, that could ever 
-                <br/>come near covering the budget deficit"
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                Since the pandemic started
-                <br/><b>New York Billionaires' wealth</b>
-                <br/><b>increased by $77 billion</b>
-                <br/>(March to June 2020)
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                It's time to <b>make billionaires pay</b>
-                <br/><b>their fair share</b> to ensure New Yorkers
-                <br/>in need can recover and thrive
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                These <b>wealth taxes</b> can raise over 
-                <br/><b>$45,000,000,000</b> for New York 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$500 Million</span>
-                    <br/><b>Corp Landlord Tax</b>
-                </h4>
-                    Bill numbers: S.7231/A.9041 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$650 Million</span>
-                    <br/><b>Pied-a-Terre Tax</b>
-                </h4>
-                    Bill numbers: S.44/A.4540 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$3.2 billion</span>
-                    <br/><b>Stock buyback tax</b>
-                </h4>
-                    Bill numbers: S.7629/A.09748 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$13 Billion</span>
-                    <br/><b>Stock transfer tax</b>
-                </h4>
-                    Bill numbers: S.6203/A.07791 
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$4.5 Billion</span>
-                    <br/><b>Ultramillionaires' Tax</b>
-                </h4>
-                    Bill numbers: S.7378/A.10363
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="item large">
-                <h4>
-                    <span class="outline">$23 Billion</span>
-                    <br/><b>Billionaires' Tax</b>
-                </h4>
-                    Bill numbers: S.8277/A.01041 
-            </div>
-        </div>
-
-    </div>
-    <div class="row">
-        <span class="red"><b>Make billionaires pay!</b></span>
-        </div>
-    </div>
-
-
-        <div class="row">
-            <div class="column">
+            <div class="row">
                 <div class="item large">
-                    <b>Demand Cuomo Tax the Rich!!!
-                    <br/>Call him --> (518) 474 4246
-                    <br/>& tweet him --> @NYGOVCUOMO</b>
-                </div>
-            </div>
-            <div class="column">
-                <div class="item">
-                    78% of voters across New York 
-                    <br/>want to raise taxes on the wealthy 
-                    <br/>not cut essential services to
-                    <br/>fill a looming budget shortfall
+                    <b>Individuals worth more than $30 million</b>
+                    <br/>are classified as ultra high net worth
+                    <br/> aka part of the <b> ultra wealth class</b>
                 </div>
             </div>
 
-        </div>
-        <div class="row">
-            <div class="item">
-                The total area of this material represents the cumulative wealth 
-                <br/>of New York billionaires.  There are 14 ways to tax the rich, learn more at 
-                <br/>www.makebillionairespay.info
+            <div class="row">
+                <div class="item large">
+                    <b>There are <span class="yellow large">8,865 ultramillionaires</span></b>
+                    <br/> <b>out of 19.4 million people in the state.</b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b>There are 
+                    <span class="yellow large">120 billionaires</span>
+                    <br/> out of 19.4 million in the state.</b>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 4em;">
+                <div class="item large">
+                    <b>Billions of $$$ is hard to imagine- </b>
+                    <br/>for visual comparison here are some to-scale
+                    <br/> numbers worth being familiar with . . .
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    Average Annual
+                    <br/>New Yorkers' Income
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div data-wealth-in-thousands="74501" class="wealth-block bg-red"></div>
+                    <p class="red">Average income of the top .01%</p>
+                    <div class="item">
+                        Average Income 
+                        <br/>of the top .01%
+                        <br/>$74,501,400
+                        <br/>$74.5 Million
+                    </div>
+                </div>
+                <div class="column">
+                    <div data-wealth-in-thousands="2201" class="wealth-block bg-red"></div>
+                    <p class="red">Average income of the top .1%</p>
+                    <div class="item">
+                        Average 
+                        <br/>of the top .1%
+                        <br/>$2,202.480
+                        <br/>$2.2 Million
+                    </div>
+                </div>
+                <div class="column">
+                    <div data-wealth-in-thousands="50" class="wealth-block bg-red"></div>
+                    <p class="red">Average income of the bottom 99%</p>
+                    <div class="item">
+                        $Average 
+                        <br/>bottom 99%
+                        <br/>$50,000
+                        <br/>$50 Thousand
+                    </div>
+                </div>
+                <div class="column">
+                    <div data-wealth-in-thousands="25" class="wealth-block bg-red"></div>
+                    <p class="red">25K or less</p>
+                    <div class="item">
+                        $25K or less
+                        <br/>bottom 99%
+                        <br/>$25,000
+                        <br/>$25 thousand or less
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    If the <b>total area</b> of this roll represents
+                    <br/>the <b>cumulative wealth of billionaires</b>
+                    <br/> Then the <b>white square</b> above = <b>$1 billion</b>
+                    <br/>and the small <b>red square</b> = <b>$25,000</b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b>Since the start of the pandemic the 
+                    <br/>ultra-wealthy have gained wealth</b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    During the same pandemic period
+                    <br/>2,594,000 New Yorker residents lost
+                    <br/>jobs, 387,000 fell ill with the virus
+                    <br/>and 31,000 died from it
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4><b>387,000 
+                    <br/>New Yorkers fell ill</b></h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4><b>31,000 
+                    <br/>New Yorkers died of the virus</b></h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4><b>2,594,000 
+                    <br/>New Yorkers lost jobs</b></h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    Billionaires in our state now have 
+                    <br/><b>$600+ billion,</b> while the rest of New York
+                    <br/> suffers under pandemic economic fallout
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>Cost to forgive all new
+                        <br/>york student loan debt</b>
+                        <br/><span class="outline">$82,000,000,000</span> 
+                    </h4>
+                    82 Billion dollars
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    Between this line and the start of this
+                    <br/>roll of material represents . . .
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>"This crisis calls for <span class="red">multimillionaires
+                            <br/>and billionaires to help</span> our state</b>
+                        <br/><span class="outline">shoulder this extraordinary burden".</span>
+                    </h4>
+                    -Senate Majority Leader Andrea Stewart Cousins
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    Between this line and the start of this 
+                    <br/>roll of material so far represents
+                    <h4>$100,000,000,000
+                    <br/><span class="outline">one-hundred billion</span></h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    <h4><b>Cost to provide free pre-k
+                    <br/>for all 3 & 4 year-olds in NY</b></h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    <h3><span class="outline">$1,500,000,000</span></h3>
+                    $1.5 Billion
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b>Childcare for all</b>
+                    <br/>9 billion dollars = Cost to provide
+                    <br/> free childcare for all New Yorkers
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    <h3><span class="outline">$9,000,000,000</span></h3>
+                    $9 Billion
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $3.1 Billion - Richard LeFrak
+                    <br/>CEO of the Lefrak organization.  Wealthiest
+                    <br/>of the strictly real estate billionaires
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b>$2.1 Billion</b> (each)
+                    <br/><b>Alain & Gerard Wertheimer</b> 
+                    <br/> Owners of fashion boutique Chanel
+                    <br/>Own multiple private islands
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $3.6 Billion - Marc Rowen
+                    <br/>Apollo Global Management
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $4.5 Billion - Joshua Harris
+                    <br/>Apollo Global Management
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b>$7.6 Billion - Leon Black</b>
+                    <br/>Apollo Global Management Wealth 
+                    <br/> Wealth increased $1B since pandemic.
+                    <br/>Owns $50M Manhattan Mansion, $40M
+                    <br/> LA Mansion. Paid $16M for one painting
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>Cost to provide all new 
+                        <br/>yorkers free healthcare</b>
+                    <br/><span class="outline">$160,000,000,000</span>
+                    </h4>
+                    160 billion dollars
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $48 Billion -> cost to cover every 
+                    <br/>prescription and all medical devices for 
+                    <br/>every New Yorker
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $38 Billion -> cost to provide long term 
+                    <br/>care for every elderly and chronically-ill 
+                    <br/>New Yorker
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $32 Billion -> cost to provide insulin for  
+                    <br/>every person in the United States
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>Cost to lift everyone
+                        <br/>in the U.S. out of poverty</b>
+                        <br/><span class="outline">$175,300,000,000</span> 
+                    </h4>
+                    175.3 Billion dollars
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>Cost to lift everyone
+                        <br/>in the U.S. out of poverty</b>
+                        <br/><span class="outline">$175,300,000,000</span> 
+                    </h4>
+                    175.3 Billion dollars
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>$47,900,000,000</b>
+                    </h4>
+                        $47.9 billion, Julia Koch
+                    <h4>
+                        <b>Julia Koch & Family
+                        <br/> Major Right Wing Donor</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    Julia Koch's family conglomerate is
+                    <br/>koch industries
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    Koch industries is the 2nd largest 
+                    <br/>privately held company in the U.S. with
+                    <br/>revenue of $115 billion a year
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    Wealth now $47.9 billion, wealth
+                    <br/>increased 26% since the pandemic
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    Wealth now $47.9 billion, wealth
+                    <br/>increased 26% since the pandemic
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4><span class="outline">$266,000,000</span>
+                    </h4>
+                    $266 Million
+                    <h4>
+                        <b>Cost to have a nurse in every public school in NY</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $3.7 billion 
+                    <br/>Barry Diller-founded Fox Broadcasting.
+                    <br/>Chairman of Expedia.  Wealth increase since
+                    <br/>pandemic: $700 million
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                        <b>$12.6 Billion - Donald Newhouse</b>
+                        <br/>Publishing/cable - Has a position on 
+                        <br/>the Library of Congress as both a board
+                        <br/>and council member
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $3.6 billion - Thomas Secunda
+                    <br/>Bloomberg LP
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $6.9 billion - Valerie Mars
+                    <br/>Mars, Inc.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $3.1 billion - Richard LeFrak
+                    <br/>The wealthiest of the strictly real estate
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $82 billion -> Cost to forgive all New York
+                    <br/>student loan debt
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4><span class="outline">$8,000,000,000</span></h4>
+                    8 billion dollars
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="item large">
+                <h4>
+                    <b>Make CUNY college free</b>
+                    </h4>
+                    <b>8 billion dollars</b> = cost to
+                    <br/>make college free for all CUNY students 
+                    <br/>for the next 10 years 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $25 billion -> Provides 35.7 million laptops
+                    <br/>to our kids and whoever needs them
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>$60,100,000,000</b>
+                    </h4>
+                        $60.1 billion, Michael Bloomberg
+                    <h4>
+                        <b>Michael Bloomberg - Richest 
+                        <br/> Person in New York</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                Michael Bloomberg, former NYC mayor and
+                    <br/>currently the richest person in NYC
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                As mayor, he implemented "stop and frisk"
+                    <br/>a police practice that unconstitutionally
+                    <br/>targets black and brown new yorkers
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                Wealth, now $60.1 billion, increased
+                    <br/>25% ($15B) since the pandemic started
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>$30,000,000,000</b>
+                    </h4>
+                        $30 billion
+                    <h4>
+                        <b>Cost to hire 50,000  
+                        <br/> teachers for 10 years</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                If Michael Bloomberg paid for this with his
+                    <br/>wealth alone, he would still be a 
+                    <br/>multi-billionare billionaire afterwards 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                Michael Bloomberg, former NYC mayor and
+                    <br/>currently the richest person in NYC
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                        <b>$17.8 Billion
+                            <br/>Donald Newhouse</b>
+                        <br/>CEO of Blackstone Group.  Fortune
+                        <br/>increased $2.4 billion since the 
+                        <br/>the pandemic started. <b>Top Trump Donor</b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $35 Billion -> Cost to build or preserve
+                    <br/> 600,000 units of new democratically 
+                    <br/>controlled housing
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$6,000,000,000</span>
+                    </h4>
+                    $6 billion dollars
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>End Homelessness</b>
+                    </h4>    
+                        <br/>$6 Billion = Cost per year
+                        <br/>to end homelessness and stably house 
+                        <br/>every low income New Yorker
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                $40 Billion -> Cost to repair and update
+                    <br/> NYCHA housing for 400,000 New Yorkers 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$5,700,000,000</span>
+                    </h4>
+                    $5.7 billion dollars each
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <b>Katherine Rayner, James
+                        <br/>Chambers, Margaretta
+                        <br/>Taylor - Cox Enterprises</b>
+                    </h4>    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                Cox Enterprises is a member of "Reforming 
+                <br/>America's Taxes Equitably" - a group 
+                    <br/> advocating for tax "reform" by lowering 
+                    <br/>the corporate taxes even more 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    If the <b>total area</b> of this roll represents
+                    <br/>the <b>cumulative wealth of billionaires</b>
+                    <br/> Then the <b>white square</b> below = <b>$1 billion</b>
+                    <br/>and the small <b>red square</b> = <b>$25,000</b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    NY faces a multi-billion dollar deficit due
+                    <br/>to coronavirus - Cuomo's budget office
+                    <br/>estimates it has grown to $14.5 billion
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h5>
+                        March 28, Governor Andrew Cuomo:
+                    </h5>
+                    <br/>"YEAH LOOK, WE HAVE NO MONEY.
+                    <br/>SO LIFE IS OPTIONS.
+                    <br/>THE STATE HAS NO MONEY."
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="red">NEW YORK STATE BUDGET
+                        <br/>DEFICIT </span>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                Governor Andrew Cuomo plans to make
+                    <br/>New Yorkers in need shoulder the 
+                    <br/>pandemic burden by cutting the the state's
+                    <br/>budget 20% across the board . . .
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b> . . .Cutting 20% across the board will</b>
+                    <br/>affect education, healthcare, housing, 
+                    <br/>homelessness, and much more
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>GOV. CUOMO'S
+                        <br/>20% CUTS</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>LAYING OFF TEACHERS
+                        <br/>& PROFESSORS</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>HIGHER TOLLS</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>LAYING OFF
+                        <br/>GUIDANCE COUNSELORS &
+                        <br/> SOCIAL WORKERS</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>FIRING NURSES
+                        <br/>DURING A GLOBAL PANDEMIC</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>HIGHER COLLEGE TUITION</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>DIMINISHED GARBAGE
+                        <br/>PICK-UP</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                <h4>
+                    <b>HIGHER PROPERTY TAXES
+                        <br/>FOR WORKING CLASS
+                        <br/>HOMEOWNERS</b>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">Almost</span>
+                        <b>two-thirds (65%) of voters prefer to </b> <span class="red">raise taxes</span>
+                            <span class="outline">compared with only 16% who prefer service cuts</span>
+                    </h4>
+                    This holds steady in both Long Island senate districts (65%) and the Hudson Valley senate districts (69%)
+                    <br/>where there is even less support for service cuts (8% and 7%) respectively
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">"The</span>
+                        <span class="red">assembly majority</span>
+                        <b>has long favored asking those with more to pay their fair share".</b> 
+                    </h4>
+                    - Speaker of the New York State Assembly Carl Heastie
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $4.3 billion - Ken Langone Home Depot.
+                    <br/> Contributed to Cuomo's campaigns for Governor 
+                    <br/> and consequently served on his council of economic 
+                    <br/> and fiscal adivsers group in 2010
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b>3.8 Billion - Jeremy Jacobs Jr.</b>
+                    <br/>Named to Cuomo's re-opening advisory board
+                    <br/> <b>Owner of the Boston Bruins, reduced
+                    <br/> salaries of team staff while his own 
+                    <br/> wealth increased by $600 million </b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <b>3.7 Billion - Jonathan Gray</b>
+                    <br/>Named to Cuomo's re-opening advisory board
+                    <br/> <b>Donated to 3 Democratic
+                    <br/> corporate-friendly presidential
+                    <br/> candidates during the 2020 primaries </b>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">It's time to</span>
+                        <span class="red"><b>stop</b></span>
+                        <br/><b>protecting billionaires</b> 
+                        <br/><span class="outline">and start protecting working people</span>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">It's time to</span>
+                        <span class="red"><b>stop</b></span>
+                        <br/><b>Governor Cuomo's cuts</b> 
+                        <br/><span class="outline">to essential schools and hospitals</span>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    Since the pandemic started
+                    <br/><b>New York Billionaires' wealth</b>
+                    <br/><b>increased by $77 billion</b>
+                    <br/>(March to June 2020)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <span class="red"><b>Billionaire $$$$ Gains 
+                    <br/> greater than 3 times NY State Budget </b></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    $77 billion = More than 3 times
+                    <br/> the entire NYS budget
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item">
+                    The state budget deficit is huge (14.5 billion)
+                    <br/> but it is also manageable
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    Ultra-wealthy New Yorkers still
+                    <br/>pay lower tax rates than
+                    <br/>working class New Yorkers
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    Yet Cuomo has refused to consider
+                    <br/>taxes on the ultra-rich that could
+                    <br/>together raise over $45 billion a year 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h6>August 31, Governor Andrew Cuomo</h6>
+                    <br/>"There is no combination of savings, 
+                    <br/>efficiencies, tax increases, that could ever 
+                    <br/>come near covering the budget deficit"
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    Since the pandemic started
+                    <br/><b>New York Billionaires' wealth</b>
+                    <br/><b>increased by $77 billion</b>
+                    <br/>(March to June 2020)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    It's time to <b>make billionaires pay</b>
+                    <br/><b>their fair share</b> to ensure New Yorkers
+                    <br/>in need can recover and thrive
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    These <b>wealth taxes</b> can raise over 
+                    <br/><b>$45,000,000,000</b> for New York 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$500 Million</span>
+                        <br/><b>Corp Landlord Tax</b>
+                    </h4>
+                        Bill numbers: S.7231/A.9041 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$650 Million</span>
+                        <br/><b>Pied-a-Terre Tax</b>
+                    </h4>
+                        Bill numbers: S.44/A.4540 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$3.2 billion</span>
+                        <br/><b>Stock buyback tax</b>
+                    </h4>
+                        Bill numbers: S.7629/A.09748 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$13 Billion</span>
+                        <br/><b>Stock transfer tax</b>
+                    </h4>
+                        Bill numbers: S.6203/A.07791 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$4.5 Billion</span>
+                        <br/><b>Ultramillionaires' Tax</b>
+                    </h4>
+                        Bill numbers: S.7378/A.10363
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item large">
+                    <h4>
+                        <span class="outline">$23 Billion</span>
+                        <br/><b>Billionaires' Tax</b>
+                    </h4>
+                        Bill numbers: S.8277/A.01041 
+                </div>
+            </div>
+
+            <div class="row">
+                <span class="red"><b>Make billionaires pay!</b></span>
+            </div>
+
+
+            <div class="row">
+                <div class="column">
+                    <div class="item large">
+                        <b>Demand Cuomo Tax the Rich!!!
+                        <br/>Call him --> (518) 474 4246
+                        <br/>& tweet him --> @NYGOVCUOMO</b>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        78% of voters across New York 
+                        <br/>want to raise taxes on the wealthy 
+                        <br/>not cut essential services to
+                        <br/>fill a looming budget shortfall
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    The total area of this material represents the cumulative wealth 
+                    <br/>of New York billionaires.  There are 14 ways to tax the rich, learn more at 
+                    <br/>www.makebillionairespay.info
+                </div>
             </div>
         </div>
+        
         <script>
             (function(){
-                //resize all elements whit data-wealth-in-thousands attribute
+
+                let scale = .1;
+
+                if (document.body.clientWidth < 980) {
+                    scale = .05;
+                } else if (document.body.clientWidth < 680) {
+                    scale = .035;
+                }
+
+                //resize all elements with data-wealth-in-thousands attribute
+                for (const wealthElement of document.querySelectorAll('[data-wealth-in-thousands]')) {
+                    console.log(wealthElement);
+                    let w = wealthElement.dataset.wealthInThousands * scale;
+                    let width = Math.sqrt(w);
+                    wealthElement.style.width = width + "px";
+                    wealthElement.style.height = width + "px";
+                }
+
+                let theBanner = document.getElementById('banner');
+
+                //set banner height
+                let bannerWidth = theBanner.clientWidth;
+                let bannerHeight = (600000000000 * scale / bannerWidth * scale);
+                theBanner.style.height = bannerHeight + "px";
+
+                //add billion dollar ticks
+                for (let i = 1; i < 6001; i++) {
+                    let el = document.createElement('div');
+                    el.className = 'tick';
+                    el.textContent = '$' + (i / 10) + ' billion';
+                    el.style.top = (bannerHeight / 6000 * i) + "px";
+                    theBanner.appendChild(el);
+                }
             })();
         </script>
     </body>
