@@ -124,7 +124,7 @@
 
             #banner {
                 width: 1250px;
-                margin: 10em auto;
+                margin: 5em auto 10em;
                 padding-top: 1px;
                 background: #000033;
                 position: relative;
@@ -144,6 +144,66 @@
                 display: inline-block;
             }
 
+            #menu {
+                display: none;
+                position: fixed;
+                top: 30px;
+                left: 55%;
+                width: 90%;
+                min-height: 50%;
+                margin: 0 0 0 -50%;
+                background: #ffcc00;
+                border-radius: 5px;
+                color: #000;
+                box-shadow: -3px 3px 10px rgba(0,0,0,.5);
+                z-index: 10;
+                padding-bottom: 3em;
+            }
+            #menu p {
+                margin: 0 2em 2.5em;
+                clear: both;
+                font-weight: 400;
+                font-size: 18px;
+                text-transform: none;
+                text-align: left;
+                line-height: 1.5;
+            }
+            #menu-close {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border: 2px solid #000;
+                border-radius: 30px;
+                float: right;
+                margin: 30px 30px 10px;
+                color: #000;
+                cursor: pointer;
+                font-size: 27px;
+            }
+            #menu-trigger {
+                display: block;
+                position: fixed;
+                top: 30px;
+                left: 30px;
+                width: 50px;
+                height: 50px;
+                background: #ffcc00;
+                border-radius: 30px;
+                text-align: center;
+                box-shadow: -3px 3px 10px rgba(0,0,0,.5);
+                z-index: 10;
+            }
+            #menu-trigger span {
+                display: inline-block;
+                background: #000;
+                margin: 0 2px 0;
+                position: relative;
+                top: 15px;
+                width: 6px;
+                height: 6px;
+                border-radius: 10px;
+            }
+
 
             @media (max-width: 1300px) {
                 #banner {
@@ -151,6 +211,9 @@
                 }
                 body {
                     font-size: 12px;
+                }
+                #menu-trigger span {
+                    top: 18px;
                 }
             }
             @media (max-width: 980px) {
@@ -184,15 +247,32 @@
                 }
             }
         </style>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRRV7DFRSB"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HRRV7DFRSB');
+        </script>
     </head>
     <body>
+
+        <a id="menu-trigger" href="#"><span></span><span></span><span></span></a>
+        <div id="menu">
+            <a id="menu-close">&times;</a>
+            <p>This website illustrates how much wealth exists, and how unnecessary budget cuts are.</p>
+            <p>Visit <a href="https://makebillionairespay.info/">MakeBillionairesPay.info</a> to
+            learn more about ways to raise money from billionaires in NY State, and what we can do now to 
+            make Governor Cuomo tax the ultra-rich.
+        </div>
 
         <div id="banner">
 
             <div class="border-yellow" style="border-bottom: none; margin-top:4em;padding-bottom: 20em;">
                 <div class="row">
                     <div class="item">
-                        <b>The total area of this purple box 
+                        <b>The total area of this dark blue box 
                         <br/>represents the cumulative wealth 
                         <br/>of New York billionaires.</b>
                     </div>
@@ -781,15 +861,17 @@
                 </div>
             </div>
 
-            <div class="row" style="margin-top: 10em;">
-                <div class="item large left-border-red">
-                    <h2>
-                        <span class="red">NEW YORK STATE BUDGET
-                        <br/>DEFICIT </span>
-                    </h2>
+            <div data-wealth-in-thousands="30000000" data-nested-level="2" class="wealth-block border-red" style="margin-top: 15em;">
+                <div class="row" style="margin-top: 10em;">
+                    <div class="item large left-border-red">
+                        <h2>
+                            <span class="red">NEW YORK STATE BUDGET
+                            <br/>DEFICIT </span>
+                        </h2>
+                    </div>
                 </div>
+                <h1 class="red" style="font-size: 8em;line-height: .6;margin-top: 2em;">$14.5 <span style="font-size: .5em;">Billion</span></h1>
             </div>
-            <h1 class="red" style="font-size: 7em;">$14.5 <br/>Billion</h1>
 
 
             <div class="row" style="margin-top: 5em;">
@@ -972,7 +1054,7 @@
                     </div>
                 </div>
 
-                <h1 class="yellow" style="font-size: 6em;">77 <br/>Billion</h1>
+                <h1 class="yellow" style="font-size: 6em;margin-top: 3em;">$77 <br/>Billion</h1>
 
                 <div class="row">
                     <div class="item">
@@ -981,7 +1063,9 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-top: 10em;">
+                
+
+                <div class="row" style="margin-top: 20em;">
                     <div class="item large red">
                         <h3>The state budget deficit is huge (14.5 billion)
                         <br/> but it is also manageable</h3>
@@ -1000,7 +1084,7 @@
                 </div>
 
 
-                <div class="row" style="margin-top: 10em;">
+                <div class="row" style="margin-top: 15em;">
                     <div class="item large">
                         Ultra-wealthy New Yorkers still
                         <br/>pay lower tax rates than
@@ -1025,12 +1109,12 @@
                     </div>
                 </div>
 
-                <h1 style="font-size: 6em;" class="red">
+                <h1 style="font-size: 6em; margin-top: 4em;" class="red">
                     We must tell Cuomo
                     <span class="yellow">Tax The Rich</span>
                 </h1>
 
-                <div class="row" style="margin-top: 5em;">
+                <div class="row" style="margin-top: 8em;">
                     <div class="item large">
                         It's time to <b>make billionaires pay</b>
                         <br/><b>their fair share</b> to ensure New Yorkers
@@ -1099,9 +1183,10 @@
                     <div class="item large">
                         <h2>
                             <span class="outline">$23 Billion</span>
-                            <br/><b>Billionaires' Tax</b>
+                            <br/><b>Mark to Market Tax</b>
                         </h2>
-                            Bill numbers: S.8277/A.01041 
+                            Costs $3.5 Billion <br/>
+                            Bill numbers: S.8277B/A.1041A
                     </div>
                 </div>
 
@@ -1124,7 +1209,7 @@
                 </div>
                 <div class="row" style="margin-top: 15em;">
                     <div class="item large">
-                        <h3>The total area of the purple box represents the cumulative wealth 
+                        <h3>The total area of the dark blue box represents the cumulative wealth 
                         <br/>of New York billionaires - $600+ Billion.  </h3>
                     </div>
                 </div>
@@ -1137,12 +1222,55 @@
                         <b><a href="https://makebillionairespay.info/">makebillionairespay.info</a></b>
                     </div>
                 </div>
+
+                <div class="row" style="margin-top: 15em;">
+                    <div class="item large">
+                        Compared to the wealth billionaires gained during the pandemic the NY deficit is small
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15em;">
+                    <div class="item large">
+                        Compared to billionaire wealth over all, the amount of revenue these taxes would 
+                        raise could change the outcomes of covid19 in our state but hardly effect billionaires.
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15em;">
+                    <div class="item large">
+                        Make no mistake, you’re nowhere near close to scrolling through all of 600 billion 
+                        dollars. As a physical prop this same representation of NY billionaire wealth is 
+                        17 feet wide and 655 feet long. Keep scrolling!
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15em;">
+                    <div class="item">
+                        Visit <a href="https://makebillionairespay.info/">MakeBillionairesPay.info</a> to learn more about what we can do now to 
+                        <b>make Governor Cuomo tax the <span class="red">ultra-rich</span>.</b>
+                    </div>
+                </div>
             </div>
         </div>
         
         <script>
             (function(){
 
+                //setup menu
+                let menuTrigger = document.getElementById('menu-trigger');
+                let menuContainer = document.getElementById('menu');
+                let menuClose = document.getElementById('menu-close');
+
+                menuTrigger.addEventListener('click', function(event){
+                    event.preventDefault();
+                    menuTrigger.style.display = 'none';
+                    menuContainer.style.display = 'block';
+                });
+
+                menuClose.addEventListener('click', function(event){
+                    event.preventDefault();
+                    menuTrigger.style.display = 'block';
+                    menuContainer.style.display = 'none';
+                });
+
+                //scale elements to represent wealth
                 let scale = .5;
 
                 if (document.body.clientWidth < 980) {
